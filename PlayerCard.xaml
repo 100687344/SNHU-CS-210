@@ -1,0 +1,18 @@
+﻿<Window x:Class="Monopoly.PlayerCard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Monopoly"
+        mc:Ignorable="d"
+        Title="PlayerCard" Height="324.71" Width="201.74">
+    <Grid>
+        <Label x:Name="lblNameDisplay" Content="Name" HorizontalAlignment="Left" Margin="37,179,0,0" VerticalAlignment="Top" Width="43"/>
+        <TextBox x:Name="tbxPlayerName" HorizontalAlignment="Left" Height="23" Margin="37,211,0,0" TextWrapping="Wrap" Text="Enter Name Here" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Button x:Name="btnAddPlayer" Content="Add Player" HorizontalAlignment="Left" Margin="37,238,0,0" VerticalAlignment="Top" Width="104" Height="36" Click="BtnAddPlayer_Click" IsEnabled="False"/>
+        <Label x:Name="lblPlayers" Content="Number Of Players" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="28" Width="175"/>
+        <TextBox x:Name="tbxTotalPlayers" HorizontalAlignment="Left" Height="23" Margin="10,43,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Button x:Name="btnStartPlayerCreation" Content="Create Players" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Width="106" Click="BtnStartPlayerCreation_Click"/>
+
+    </Grid>
+</Window>

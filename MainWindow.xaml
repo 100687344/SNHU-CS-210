@@ -1,0 +1,131 @@
+﻿<Window x:Name="frmMainWindow" x:Class="Monopoly.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Monopoly"
+        mc:Ignorable="d"
+        Title="Monopoly" Height="690" Width="1080" Grid.IsSharedSizeScope="True" WindowStartupLocation="CenterScreen">
+        
+
+
+
+
+
+
+    <Grid Margin="1,0,3.6,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/Board.png"/>
+        </Grid.Background>
+
+
+        <Button x:Name="btnRoleDice" Content="_Roll" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Height="54" Click="BtnRoleDice_Click" Margin="132,498,0,0"/>
+        <Button x:Name="btnHelp" Content="Help" HorizontalAlignment="Left" Margin="879,500,0,0" VerticalAlignment="Top" Width="58" Click="BtnHelp_Click" Height="56"/>
+        <Grid x:Name="grdBoard" Height="650" Margin="2,0,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+        </Grid>
+        <RichTextBox x:Name="rtbPlayerEvents" HorizontalAlignment="Left" Height="389" Margin="131,93,0,0" VerticalAlignment="Top" Width="300">
+            <FlowDocument>
+                <Paragraph/>
+            </FlowDocument>
+        </RichTextBox>
+        <ListBox x:Name="lbxPlayerInformation" HorizontalAlignment="Left" Height="389" Margin="639,93,0,0" VerticalAlignment="Top" Width="300"/>
+        <Label x:Name="lblDie2One" Content="" HorizontalAlignment="Left" Margin="194,498,0,0" VerticalAlignment="Top" Height="58" Width="69">
+            <Label.Background>
+                <ImageBrush ImageSource="Images/One.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="lblDie1One" Content="" HorizontalAlignment="Left" Margin="276,498,0,0" VerticalAlignment="Top" Height="58" Width="67">
+            <Label.Background>
+                <ImageBrush ImageSource="Images/One.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="lblDie1Two" Content="" HorizontalAlignment="Left" Margin="276,498,0,0" VerticalAlignment="Top" Height="58" Width="67" >
+            <Label.Background>
+                <ImageBrush ImageSource="Images/Two.png"/>
+            </Label.Background>
+        </Label>
+
+        <Label x:Name="lblDie1Three" Content="" HorizontalAlignment="Left" Margin="276,498,0,0" VerticalAlignment="Top" Height="58" Width="67">
+            <Label.Background>
+                <ImageBrush ImageSource="Images/Three.png"/>
+            </Label.Background>
+        </Label>
+
+        <Label x:Name="lblDie1Four" Content="" HorizontalAlignment="Left" Margin="276,498,0,0" VerticalAlignment="Top" Height="58" Width="67">
+            <Label.Background>
+                <ImageBrush ImageSource="Images/Four.png"/>
+            </Label.Background>
+        </Label>
+
+        <Label x:Name="lblDie1Five" Content="" HorizontalAlignment="Left" Margin="276,498,0,0" VerticalAlignment="Top" Height="58" Width="67">
+            <Label.Background>
+                <ImageBrush ImageSource="Images/Five.png"/>
+            </Label.Background>
+        </Label>
+
+        <Label x:Name="lblDie1Six" Content="" HorizontalAlignment="Left" Margin="276,498,0,0" VerticalAlignment="Top" Height="58" Width="67">
+            <Label.Background>
+                <ImageBrush ImageSource="Images/Six.png"/>
+            </Label.Background>
+        </Label>
+
+        <Label x:Name="lblDie2Two" Content="" HorizontalAlignment="Left" Margin="194,498,0,0" VerticalAlignment="Top" Height="58" Width="69">
+            <Label.Background>
+                <ImageBrush ImageSource="Images/Two.png"/>
+            </Label.Background>
+        </Label>
+
+        <Label x:Name="lblDie2Three" Content="" HorizontalAlignment="Left" Margin="194,498,0,0" VerticalAlignment="Top" Height="58" Width="69">
+            <Label.Background>
+                <ImageBrush ImageSource="Images/Three.png"/>
+            </Label.Background>
+        </Label>
+
+        <Label x:Name="lblDie2Four" Content="" HorizontalAlignment="Left" Margin="194,498,0,0" VerticalAlignment="Top" Height="58" Width="69">
+            <Label.Background>
+                <ImageBrush ImageSource="Images/Four.png"/>
+            </Label.Background>
+        </Label>
+
+        <Label x:Name="lblDie2Five" Content="" HorizontalAlignment="Left" Margin="194,498,0,0" VerticalAlignment="Top" Height="58" Width="69">
+            <Label.Background>
+                <ImageBrush ImageSource="Images/Five.png"/>
+            </Label.Background>
+        </Label>
+
+        <Label x:Name="lblDie2Six" Content="" HorizontalAlignment="Left" Margin="194,498,0,0" VerticalAlignment="Top" Height="58" Width="69">
+            <Label.Background>
+                <ImageBrush ImageSource="Images/Six.png"/>
+            </Label.Background>
+        </Label>
+        <Button x:Name="BtnEndTurn" Content="_End Turn" HorizontalAlignment="Left" Margin="356,498,0,0" VerticalAlignment="Top" Width="53" Height="54" Click="BtnEndTurn_Click">
+        </Button>
+    </Grid>
+
+</Window>

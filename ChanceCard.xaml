@@ -1,0 +1,18 @@
+﻿<Window x:Class="Monopoly.ChanceCard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Monopoly"
+        mc:Ignorable="d"
+        Title="ChanceCard" Height="300" Width="400" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/ChanceBackground.png"/>
+    </Window.Background>
+    <Grid>
+        <TextBlock x:Name="tbChanceInfo" HorizontalAlignment="Left" Margin="45,105,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="65" Width="300"/>
+        <Label x:Name="lblChanceCardDisplay" Content="Chance" HorizontalAlignment="Left" Margin="120,25,0,0" VerticalAlignment="Top" Width="184" Height="58" FontSize="36"/>
+        <Button x:Name="btnCardAction" Content="_OK" HorizontalAlignment="Left" Margin="113,175,0,0" VerticalAlignment="Top" Height="74" Width="155" Click="BtnCardAction_Click"/>
+
+    </Grid>
+</Window>
